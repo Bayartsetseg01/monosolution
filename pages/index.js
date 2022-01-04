@@ -1,0 +1,226 @@
+import React from "react";
+// import { UncontrolledCarousel, Row, Col } from "reactstrap";
+import { withRouter } from "next/router";
+// import Example from './slideshow'
+import Carousel from "react-elastic-carousel";
+import Link from "next/link";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+
+const logo = require("../public/mono-solution-horizontal.png");
+
+const items = [
+  {
+    src: "https://source.unsplash.com/1000x750",
+    altText: "Slide 1",
+    caption: "",
+    header: "",
+    key: "1",
+  },
+  {
+    src: logo,
+    altText: "Slide 2",
+    caption: "",
+    header: "",
+    key: "2",
+  },
+  {
+    src: "../public/ezgif.com-gif-maker.gif",
+    altText: "Slide 3",
+    caption: "",
+    header: "",
+    key: "3",
+  },
+];
+
+export default function Home() {
+  return (
+    // <div className={styles.monoLogo}>
+    <div>
+      {/* <div style={{display:'flex', justifyContent:"flex-end"}}>
+        <Link href="https://nextjs.org">
+       <button className={styles.buttonStyle}> Next.js </button>  
+       </Link> 
+       </div> */}
+      <div>
+        <body>
+          <ul className={styles.ul}>
+            <li className={styles.li}>
+              <a className={styles.a} class="active" href="#home">
+                Home
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a className={styles.a} href="#news">
+                News
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a className={styles.a} href="#contact">
+                Contact
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a className={styles.a} href="#about">
+                About
+              </a>
+            </li>
+          </ul>
+        </body>
+        <div className={styles.background}></div>
+
+        <main className={styles.main}>
+          <h1 className={styles.title}>
+            Welcome to <a href="https://nextjs.org">Next.js!</a>
+          </h1>
+
+          <p className={styles.description}>
+            Get started by editing{" "}
+            <code className={styles.code}>pages/index.js</code>
+          </p>
+
+          <div className={styles.grid}>
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h2>Documentation &rarr;</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+
+            <a href="https://nextjs.org/learn" className={styles.card}>
+              <h2>Learn &rarr;</h2>
+              <p>Learn about Next.js in an interactive course with quizzes!</p>
+            </a>
+
+            <a
+              href="https://github.com/vercel/next.js/tree/master/examples"
+              className={styles.card}
+            >
+              <h2>Examples &rarr;</h2>
+              <p>Discover and deploy boilerplate example Next.js projects.</p>
+            </a>
+
+            <a
+              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              className={styles.card}
+            >
+              <h2>Deploy &rarr;</h2>
+              <p>
+                Instantly deploy your Next.js site to a public URL with Vercel.
+              </p>
+            </a>
+          </div>
+        </main>
+
+        <Carousel>
+          {items.map((item) => {
+            return (
+              <Image
+                src="/mono-solution-horizontal.png"
+                height="100px"
+                width="300px"
+              />
+            );
+          })}
+        </Carousel>
+        <div className={styles.grid}>
+          <a href="https://nextjs.org/docs" className={styles.cardHover}>
+            <h2>Documentation &rarr;</h2>
+            <p>
+              <Image src="/nextjs.png" height="100px" width="300px" />
+            </p>
+          </a>
+
+          <a href="https://nextjs.org/docs" className={styles.cardHover}>
+            <h2>Documentation &rarr;</h2>
+            <p>
+              <Image src="/nextjs.png" height="100px" width="300px" />
+            </p>
+          </a>
+          <a href="https://nextjs.org/docs" className={styles.cardHover}>
+            <h2>Documentation &rarr;</h2>
+            <p>
+              <Image src="/nextjs.png" height="100px" width="300px" />
+            </p>
+          </a>
+
+          <a href="https://nextjs.org/docs" className={styles.cardHover}>
+            <h2>Documentation &rarr;</h2>
+            <p>
+              <Image src="/nextjs.png" height="100px" width="300px" />
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// //import Head from 'next/head'
+// import Image from 'next/image'
+// import styles from '../styles/Home.module.css'
+
+// export default function Home() {
+//   return (
+//     <div className={styles.container}>
+//       <Head>
+//         <title>Create Next App</title>
+//         <meta name="description" content="Generated by create next app" />
+//         <link rel="icon" href="/favicon.ico" />
+//       </Head>
+
+//       <main className={styles.main}>
+//         <h1 className={styles.title}>
+//           Welcome to <a href="https://nextjs.org">Next.js!</a>
+//         </h1>
+
+//         <p className={styles.description}>
+//           Get started by editing{' '}
+//           <code className={styles.code}>pages/index.js</code>
+//         </p>
+
+//         <div className={styles.grid}>
+//           <a href="https://nextjs.org/docs" className={styles.card}>
+//             <h2>Documentation &rarr;</h2>
+//             <p>Find in-depth information about Next.js features and API.</p>
+//           </a>
+
+//           <a href="https://nextjs.org/learn" className={styles.card}>
+//             <h2>Learn &rarr;</h2>
+//             <p>Learn about Next.js in an interactive course with quizzes!</p>
+//           </a>
+
+//           <a
+//             href="https://github.com/vercel/next.js/tree/master/examples"
+//             className={styles.card}
+//           >
+//             <h2>Examples &rarr;</h2>
+//             <p>Discover and deploy boilerplate example Next.js projects.</p>
+//           </a>
+
+//           <a
+//             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+//             className={styles.card}
+//           >
+//             <h2>Deploy &rarr;</h2>
+//             <p>
+//               Instantly deploy your Next.js site to a public URL with Vercel.
+//             </p>
+//           </a>
+//         </div>
+//       </main>
+
+//       <footer className={styles.footer}>
+//         <a
+//           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Powered by{' '}
+//           <span className={styles.logo}>
+//             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+//           </span>
+//         </a>
+//       </footer>
+//     </div>
+//   )
+// }
