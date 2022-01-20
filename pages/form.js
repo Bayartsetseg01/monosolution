@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
  function Form() {
-  const handleSubmit = async (event) => {
+  /* const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
 
@@ -33,32 +34,32 @@ import styles from '../styles/Home.module.css'
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
     alert(`Is this your full name: ${result.data}`)
-  }
+  } */
      return(       
        //<Card>
-         <form  onSubmit={handleSubmit} >
+         <form  /* onSubmit={handleSubmit} */ >
            <div>
              <h1 className={styles.title}>Designer</h1>
-             <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@700&display=swap" rel="stylesheet"></link>
+             
            </div>
-           <div class={styles.gri}>
-           <div class= "grid1"> 
+           <div className={styles.gri}>
+           <div className= "grid1"> 
              <label htmlFor='fname'> First name </label>
              <input type='text' placeholder="First name" required id='fname'></input>
            </div>
-           <div class="grid2"> 
+           <div className="grid2"> 
              <label htmlFor='lname'> Last name </label>
              <input type='text' placeholder="Last name" required id='lname'></input>
            </div>
-           <div class="grid3">
+           <div className="grid3">
              <label htmlFor='phone'> Phone </label>
              <input type='text' placeholder= "Phone" required id='phone'></input>
            </div>
-           <div class="grid4">
+           <div className="grid4">
              <label htmlFor='email'> Email </label>
              <input type='text' placeholder="Email" required id='email'></input>
            </div>
-           <div class="grid5">
+           <div className="grid5">
              <label htmlFor='resume'>Resume</label> 
              <input type='text' placeholder="Upload file " required id='resume'></input> 
            </div>

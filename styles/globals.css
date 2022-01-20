@@ -6,8 +6,7 @@ body {
   max-height: 1168px; */
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Mohave', sans-serif;
 }
 
 a {
@@ -85,7 +84,6 @@ button:hover{
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  /* padding: 0px auto 89px 600px; */
   
 }
 .colimage{
