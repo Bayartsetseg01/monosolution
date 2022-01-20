@@ -43,7 +43,7 @@ const Footer = () => {
                         <Image alt="follow is icon" src="/Follow Us.png" width={83} height={34} />
                     </div>
                         <div className="social-icons">
-                            <li className="items"><a href="#"> <Image alt="facebook is icon" src= "/facebook.png" width={28.5} height={28.5} /> </a></li> 
+                            <li className="items"><a href="#"> <Image alt="facebook is icon" src= "/facebook.png" width={28.5} height={28.5} /> </a> </li> 
                             <li className="items"><a href="#"> <Image alt="Insta is icon" src= "/insta-icon.png" width={28} height={28} /> </a> </li>
                         </div>
                     
