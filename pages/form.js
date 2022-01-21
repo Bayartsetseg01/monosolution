@@ -1,47 +1,32 @@
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
  function Form() {
-  /* const handleSubmit = async (event) => {
-    // Stop the form from submitting and refreshing the page.
+   const handleSubmit = async (event) => {
     event.preventDefault()
-
-    // Get data from the form.
     const data = {
       first: event.target.fname.value,
       last: event.target.lname.value,
-      phot: event.target.phone.value,
-      e: event.target.email.value,
-      r: event.target.resume.value,
-  
+      phone: event.target.phone.value,
+      email: event.target.email.value,
+      resume: event.target.resume.value,  
     }
-
     const JSONdata = JSON.stringify(data)
 
-    // Send the form data to our API and get a response.
     const response = await fetch('/api/form', {
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
 
-      // Tell the server we're sending JSON.
       headers: {
         'Content-Type': 'application/json',
       },
-      // The method is POST because we are sending data.
       method: 'POST',
     })
 
-    // Get the response data from server as JSON.
-    // If server returns the name submitted, that means the form works.
     const result = await response.json()
-    alert(`Is this your full name: ${result.data}`)
-  } */
+    alert(` SUCCESS *-* : ${result.data}`)
+  } 
      return(       
-       //<Card>
-         <form  /* onSubmit={handleSubmit} */ >
-           <div>
-             <h1 className={styles.title}>Designer</h1>
-             
-           </div>
+       <div className="containers">
+         <h1 className={styles.title}>Designer</h1>
+         <form onSubmit={handleSubmit}>
            <div className={styles.gri}>
            <div className= "grid1"> 
              <label htmlFor='fname'> First name </label>
@@ -68,8 +53,8 @@ import styles from '../styles/Home.module.css'
              <button type="submit">Send</button> 
   
          </form>
-      // </Card>
-     );
+      </div>
+     )
  }
  export default Form;
 

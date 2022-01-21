@@ -13,8 +13,6 @@ export default function Home() {
 
       </Head>
       <style jsx>{`
-
-      
         .title{
           font-family: 'Mohave', sans-serif;
         }

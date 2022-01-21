@@ -23,6 +23,7 @@
   color: #000000;
   letter-spacing: 0px;
   line-height: 24px;
+  padding-left:12px;
   opacity: 1;
 }
 .gri input{
@@ -30,7 +31,7 @@
   width: 280px;
   border: 1px solid #A7A9AB;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  
+  padding-left:12px;
 }
 
 .text {
@@ -48,10 +49,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 
 /* @media (max-width: 1360px) {
   .grid {
