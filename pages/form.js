@@ -42,7 +42,7 @@ import styles from '../styles/Home.module.css'
            </div>
            <div className="grid4">
              <label htmlFor='email'> Email </label>
-             <input type="text" onfocus="this.value=''"placeholder="Email" required id='email'></input>
+             <input type="text" placeholder="Email" required id='email'></input>
            </div>
            <div className="grid5">
              <label htmlFor='resume'>Resume</label> 
