@@ -3,7 +3,7 @@ body {
   background: #f6f6f6;
 /*   max-width: 1360px;
   max-height: 1168px; */
-  font-family: 'Mohave' sans-serif;
+  /* font-family: 'Mohave' sans-serif; */
 }
 
 * {
@@ -52,7 +52,7 @@ button{
   border: 1px solid #FFFFFF;
   opacity: 1;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
@@ -63,6 +63,7 @@ button{
 button:hover{
   background-color: #F6F6F6;
   color: #505050;
+  border: 1px solid #505050;
 
 }
  footer .contact {
@@ -116,7 +117,7 @@ opacity: 1;
 } 
 
 .col11{
-  font-family:'Inter';
+  font-family:'Inter', sans-serif;
   font-weight: 200;
   font-size: 12px;
   color: #ffffff;
@@ -141,7 +142,7 @@ span{
   margin-right: 8px;
   display: block;
 
-  font-family:'Inter';
+  font-family:'Inter', sans-serif;
   font-weight: 200;
   font-size: 12px;
   color: #ffffff;
@@ -150,7 +151,7 @@ span{
   opacity: 1;
 }
 ::placeholder{
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #A7A9AB;
@@ -160,7 +161,7 @@ span{
 }
 .grid5 input{
   text-decoration:underline;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #A7A9AB;
