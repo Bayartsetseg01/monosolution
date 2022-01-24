@@ -14,8 +14,8 @@
   grid-template-rows: 69px 69px 69px;
   grid-gap: 40px;
   margin: auto 360px auto 400px;
- 
 }
+
 .gri label{
   font-family: 'Inter';
   font-weight: 300;
@@ -42,7 +42,7 @@
   width: 150px;
   padding: 8px 0;
   margin: 20px auto;
-  background: #4979ff;
+  background: #eeede0;
   border-radius: 4px;
   color: white;
  /*  text-align: center; */

@@ -22,17 +22,17 @@ const Footer = () => {
                         <div className="contact-icons">
                             <a>
                                 <span className= "co pho">
-                                    <Image alt="phone is icon" src="/Component31.png" width={16} height={16} />    
+                                    <Image alt="phone is icon" src="/phone.png" width={16} height={16} />    
                                 </span> Phone +976 99887766
                             </a>  
                             <a>
                                 <span className= "co email">
-                                    <Image alt="location is icon" src="/Component44.png" width={16} height={16} />    
+                                    <Image alt="location is icon" src="/email.png" width={16} height={16} />    
                                 </span> E-mail: team@monosolution.co
                             </a>
                             <a>
                                 <span className= "co loc">
-                                    <Image alt="location is icon" src="/Component45.png" width={16} height={16} />    
+                                    <Image  alt="location is icon" src="/location.png" width={29} height={29} /> 
                                 </span> Address: Хан-Уул дүүрэг, 15-р хороо, Бумба гранд зайсан, 10/1 байр, 1 тоот
                             </a>
                         </div>
