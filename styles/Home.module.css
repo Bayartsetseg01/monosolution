@@ -10,7 +10,7 @@
  .gri {
   display: grid;
   grid-template-columns:280px 280px; 
-  grid-template-rows: 69px 69px 69px;;
+  grid-template-rows: 69px 69px 69px;
   grid-row-gap: 40px; 
   width: 600px;
   margin: auto /* 360px auto 400px */; 
@@ -20,11 +20,13 @@
   font-family: 'Inter';
   font-weight: 300;
   font-size: 18px;
+  display: flex;
   color: #000000;
-  line-height: 24px;
+  padding-bottom:8px;
   padding-left:12px;
   opacity: 1;
 }
+
 .gri input{
   height: 40px;
   width: 280px;

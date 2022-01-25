@@ -48,7 +48,8 @@ import styles from '../styles/Home.module.css'
              <label htmlFor='resume'>Resume</label> 
              <input type='text' placeholder="Upload file" required id='resume' />  {/* </input> */}
            </div> 
-           <div className="textt"> Maximum file size: 500 mb File format: pdf, dox, .. </div>         
+           <div className="textt"> Maximum file size: 500 mb 
+                                   File format: pdf, dox, .. </div>         
            </div>
              <button type="submit">Send</button> 
   
