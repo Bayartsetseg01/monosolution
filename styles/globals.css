@@ -11,6 +11,7 @@ body {
   height: 1168px ;
   margin: 0 auto;
 }
+
 nav {
   width: 1360px;
   height: 64px;
@@ -27,7 +28,7 @@ nav .logo {
 footer {
   width: 1360px;
   height: 400px;
-  display: flex;
+  position:absolute;
   border-top: 1px solid #000000;
   top: 768px; 
   color: rgb(241, 225, 225);

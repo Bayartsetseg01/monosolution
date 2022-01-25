@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
   /*   <> */
-  <div className = "contentt">
+  <div className = "content">
    
       <Head>
         <title>MonoSolution web page</title>

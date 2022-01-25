@@ -17,7 +17,6 @@ const Footer = () => {
                 <div className="col">
                     <div className= "contact">
                         Contact Us
-                        {/* <Image alt="contact is icon" src="/Contact Us.png" width={98} height={34} /> */}
                     </div>
                     <div className="col21">
                         <div className="contact-icons">
