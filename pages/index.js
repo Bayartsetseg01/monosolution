@@ -276,28 +276,35 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <div style={{width:'1300px',}}> */}
+
       <div className={styles.flexContainer}>
-        <div className={styles.gridD}>
-          <Image
-            src="/Mask Group 12@2x.png"
-            alt="Vercel Logo"
-            // top="3304px"
-            left="60px"
-            width="604px"
-            height="336px"
-          />
-          <div className={styles.divStyles}>
-            <div className={styles.titleD}>HOW DO WE WORK</div>
-            <div className={styles.descriptionD1}>
-              At Mono Solution, we care for each other we support one another to
-              gain a wide circle of knowledge we prioritize results over working
-              hours Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+        <div
+          style={{
+            width: "1300px",
+            // height: "672px",
+            justifyContent: "center",
+            margin: 0,
+          }}
+        >
+          <div className={styles.gridD}>
+            <Image
+              src="/Mask Group 12@2x.png"
+              alt="Vercel Logo"
+              width="604px"
+              height="336px"
+            />
+            <div className={styles.divStyles}>
+              <div className={styles.titleD}>HOW DO WE WORK</div>
+              <div className={styles.descriptionD1}>
+                At Mono Solution, we care for each other we support one another
+                to gain a wide circle of knowledge we prioritize results over
+                working hours Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+              </div>
             </div>
           </div>
         </div>
