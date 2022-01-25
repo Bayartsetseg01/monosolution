@@ -555,6 +555,10 @@ marg */
   width: 604px;
   height: 328px;
   margin-right: 32px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
 }
 .flexContainer {
   display: flex;
@@ -566,8 +570,6 @@ marg */
   /* width: 1840px; */
   /* margin: 10px; */
   text-align: center;
-  /* line-height: 75px; */
-  /* font-size: 30px; */
 }
 .flexContainerB {
   display: flex;
