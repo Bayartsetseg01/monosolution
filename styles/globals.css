@@ -1,17 +1,14 @@
 html,
 body {
   background: #f6f6f6;
-/*   max-width: 1360px;
-  max-height: 1168px; */
-  /* font-family: 'Mohave' sans-serif; */
 }
 
-* {
+ * {
   box-sizing: border-box;
-}
+} 
 .content{
   max-width: 1360px;
-  height: 1168px;
+  height: 1168px ;
   margin: 0 auto;
 }
 nav {
@@ -30,8 +27,7 @@ nav .logo {
 footer {
   width: 1360px;
   height: 400px;
-  position: absolute;
-  display: block;
+  display: flex;
   border-top: 1px solid #000000;
   top: 768px; 
   color: rgb(241, 225, 225);
@@ -46,18 +42,19 @@ footer {
 button{
   width: 160px;
   height: 40px;
-  margin: 70px 589px 108px 611px; 
-  padding: 9px 56px 10px 59px;
+  margin: 70px 589px 108px 611px;
   background: #A7A9AB 0% 0% no-repeat padding-box;
   border: 1px solid #FFFFFF;
   opacity: 1;
-
+  /* display: flex;
+  justify-content: center;
+  align-items: center;  */
+  text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
-  letter-spacing: 0px;
-  line-height: 24px;
+  
   opacity: 1;
 }
 button:hover{
@@ -92,12 +89,11 @@ opacity: 1;
  }
  
  .col:nth-of-type(2){
-   height: 162px;
+  height: 162px;
   flex-basis: 256px;
   margin: 48px 54.5px 89px 89px; 
   
  }
-
  .col:nth-of-type(3){
    height: 82px;
    flex-basis:83px ;
@@ -108,6 +104,7 @@ opacity: 1;
   margin-bottom: 76px;
   width: 547px;
   height:68px;
+  
 }
 .p1,
 .p3,
@@ -121,7 +118,7 @@ opacity: 1;
   font-weight: 200;
   font-size: 12px;
   color: #ffffff;
-  letter-spacing: 0px;
+  background: transparent 0% 0% no-repeat padding-box;
   opacity: 1;
 } 
 .social-icons {
@@ -131,14 +128,35 @@ opacity: 1;
 }
 .co, .items{
   list-style: none;
-
 }
- 
 span{
   margin-right:8px;
-  
 }
-.contact-icons a{
+
+.contact{
+  margin-bottom: 16px;
+  display: flex;
+  background: transparent 0% 0% no-repeat padding-box;
+  font-family:'Mohave', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  opacity: 1;
+
+}
+.follow{
+  margin-bottom: 16px;
+  display: flex;
+  background: transparent 0% 0% no-repeat padding-box;
+  font-family:'Mohave', sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+
+.contact-icons div{
   margin-bottom: 16px;
   display: flex;
   background: transparent 0% 0% no-repeat padding-box;
@@ -146,48 +164,49 @@ span{
   font-weight: 200;
   font-size: 12px;
   color: #ffffff;
-  letter-spacing: 0px;
-  line-height: 16px;
   opacity: 1;
 }
-.contact-icons{
+/* .contact-icons{
   width: 263px;
   height: 112px;
-}
+} */
 ::placeholder{
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #A7A9AB;
-  letter-spacing: 0px;
   line-height: 24px;
   opacity: 1;
 }
-.grid5 input{
+.grid5 input {
   text-decoration:underline;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #A7A9AB;
-  letter-spacing: 0px;
-  line-height: 24px;
   opacity: 1;
 }
-.grid5 input:hover{
+
+#resume:hover{
   color:#000000;
 }
-
- .grid6 p{
+ .textt{
+  display:flex;
+  margin-top: 29px;
+  margin-left: 8px; 
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 12px;
   color: #A7A9AB;
-  letter-spacing: 0px;
-  line-height: 20px;
   opacity: 1;
+  background: transparent 0% 0% no-repeat padding-box;
   width: 204px;
-  height: 40px;
-  
-} 
+  height: 40px; 
 
+} 
+.grid2,
+.grid4{
+  margin-left: 50px;
+} 
+ 
 

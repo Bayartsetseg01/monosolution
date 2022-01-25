@@ -16,31 +16,32 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <div className= "contact">
-                        <Image alt="contact is icon" src="/Contact Us.png" width={98} height={34} />
+                        Contact Us
+                        {/* <Image alt="contact is icon" src="/Contact Us.png" width={98} height={34} /> */}
                     </div>
                     <div className="col21">
                         <div className="contact-icons">
-                            <a>
+                            <div>
                                 <span className= "co pho">
                                     <Image alt="phone is icon" src="/phone.png" width={16} height={16} />    
                                 </span> Phone +976 99887766
-                            </a>  
-                            <a>
+                            </div>  
+                            <div>
                                 <span className= "co email">
                                     <Image alt="location is icon" src="/email.png" width={16} height={16} />    
                                 </span> E-mail: team@monosolution.co
-                            </a>
-                            <a>
+                            </div>
+                            <div>
                                 <span className= "co loc">
                                     <Image  alt="location is icon" src="/location.png" width={29} height={29} /> 
                                 </span> Address: Хан-Уул дүүрэг, 15-р хороо, Бумба гранд зайсан, 10/1 байр, 1 тоот
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="col">
                     <div className= "follow">
-                        <Image alt="follow is icon" src="/Follow Us.png" width={83} height={34} />
+                        Follow Us 
                     </div>
                         <div className="social-icons">
                             <li className="items"><a href="#"> <Image alt="facebook is icon" src= "/facebook.png" width={28.5} height={28.5} /> </a> </li> 

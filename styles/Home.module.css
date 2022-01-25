@@ -1,27 +1,26 @@
 .title {
   font-family: 'Mohave', sans-serif;
-  font-weight: Bold;
+  font-weight: 700;
   font-size: 36px;
   color: #000000;
   letter-spacing:0;
-  line-height: 51px;
   opacity: 1;
   margin: 108px 633px 40px 601px;
 }
-.gri {
+ .gri {
   display: grid;
-  grid-template-columns: 280px 280px;
-  grid-template-rows: 69px 69px 69px;
-  grid-gap: 40px;
-  margin: auto 360px auto 400px;
-}
+  grid-template-columns:280px 280px; 
+  grid-template-rows: 69px 69px 69px;;
+  grid-row-gap: 40px; 
+  width: 600px;
+  margin: auto /* 360px auto 400px */; 
+} 
 
 .gri label{
   font-family: 'Inter';
   font-weight: 300;
   font-size: 18px;
   color: #000000;
-  letter-spacing: 0px;
   line-height: 24px;
   padding-left:12px;
   opacity: 1;
@@ -44,15 +43,12 @@
   margin: 20px auto;
   background: #eeede0;
   border-radius: 4px;
-  color: white;
- /*  text-align: center; */
   justify-content: center;
   align-items: center;
 }
 
 /*  @media (max-width: 136px) {
   .button {
-    background: yellow;
     flex-direction: column;
   }
 }  */

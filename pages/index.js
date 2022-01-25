@@ -2,12 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-
-
 export default function Home() {
   return (
   /*   <> */
-  <div className = "content">
+  <div className = "contentt">
    
       <Head>
         <title>MonoSolution web page</title>
@@ -19,7 +17,7 @@ export default function Home() {
       <a className={styles.btn}> See Liver Center</a>
       </Link>
       
-    </div>  
+  </div>  
   
   )
 }
