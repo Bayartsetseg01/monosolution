@@ -7,13 +7,13 @@ body {
   box-sizing: border-box;
 }
 .content {
-  max-width: 1360px;
+  width: auto;
   height: 1168px;
   margin: 0 auto;
 }
 
 nav {
-  width: 1360px;
+  width: auto;
   height: 64px;
   display: flex;
   justify-content: flex-end;
@@ -26,11 +26,11 @@ nav .logo {
 }
 
 footer {
-  width: 1360px;
+  width: 100%;
   height: 400px;
   position: absolute;
   border-top: 1px solid #000000;
-  top: 768px;
+  /* top: 768px; */
   color: rgb(241, 225, 225);
   background: #000000 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -68,6 +68,7 @@ footer .contact {
 }
 
 .row {
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +82,7 @@ footer .contact {
   opacity: 1;
 }
 .col {
+  /* width: auto; */
   flex-basis: 547px;
   height: 257px;
   margin: 54px 0 89px 60px;
