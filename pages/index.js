@@ -57,19 +57,34 @@ const Careers = (props) => {
         style={{
           display: "flex",
           justifyContent: "center",
-          marginTop: "32px",
+          margin: "0",
+          // width: "144px",
+          // height: "36px",
         }}
       >
         <Button
           style={{
+            margin: "0",
             width: "144px",
             height: "36px",
             textAlign: "center",
+            backgroundColor: "#FFFFFF",
           }}
         >
-          Apply now
+          <div className={styles.btnStyles}>Apply now</div>
         </Button>
       </div>
+      {/* <div>
+        <Button
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            // marginTop: "0",
+          }}
+        >
+          <div className={styles.btnStyles}>Apply now</div>
+        </Button>
+      </div> */}
     </div>
   );
 };
@@ -106,7 +121,7 @@ const Development = (props) => {
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#ffffff" }}>
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Mohave:wght@700&display=swap"
@@ -114,11 +129,6 @@ export default function Home() {
         ></link>
       </Head>
 
-      <ul className={styles.ul}>
-        <div style={{ marginLeft: "32px", marginTop: "17px", display: "flex" }}>
-          {/* <Image src="/Component471.svg" layout="fill" objectFit="contain" /> */}
-        </div>
-      </ul>
       <main className={styles.main}>
         <div className={styles.mainTitle1}>
           <div className={styles.title1}>MONO SOLUTION IS A TECH COMPANY</div>
@@ -191,7 +201,7 @@ export default function Home() {
           style={{
             width: "1300px",
             display: "flex",
-            height: "768px",
+            // height: "768px",
             justifyContent: "center",
           }}
         >
@@ -276,26 +286,46 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className={styles.flexContainer}>
-        <div
-          style={{
-            width: "1300px",
-            // height: "672px",
-            justifyContent: "center",
-            margin: 0,
-          }}
-        >
-          <div className={styles.gridD}>
-            <Image
-              src="/Mask Group 12@2x.png"
-              alt="Vercel Logo"
-              width="604px"
-              height="336px"
-            />
+      <div>
+        <div className={styles.flexContainer}>
+          <div
+            style={{
+              // width: "1300px",
+              // height: "672px",
+              // display: "flex",
+              justifyContent: "center",
+              margin: 0,
+            }}
+          >
+            <div className={styles.gridD}>
+              <Image
+                src="/Mask Group 12@2x.png"
+                alt="Vercel Logo"
+                width="604px"
+                height="336px"
+              />
+              <div className={styles.divStyles}>
+                <div className={styles.titleD}>HOW DO WE WORK</div>
+                <div className={styles.descriptionD1}>
+                  At Mono Solution, we care for each other we support one
+                  another to gain a wide circle of knowledge we prioritize
+                  results over working hours Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.flexContainer}>
+          <div className={styles.gridDa}>
             <div className={styles.divStyles}>
-              <div className={styles.titleD}>HOW DO WE WORK</div>
-              <div className={styles.descriptionD1}>
+              <div className={styles.titleD2}>HOW DO WE WORK</div>
+              <div className={styles.descriptionD2}>
                 At Mono Solution, we care for each other we support one another
                 to gain a wide circle of knowledge we prioritize results over
                 working hours Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -306,36 +336,18 @@ export default function Home() {
                 dolore eu fugiat nulla pariatur.
               </div>
             </div>
+            {/* <h style={{ width: "32px" }}></h> */}
+            <Image
+              src="/Mask Group 11@2x.png"
+              alt="Vercel Logo"
+              // top="3304px"
+              // rigth="60px"
+              width="604px"
+              height="336px"
+            />
           </div>
         </div>
       </div>
-      <div className={styles.flexContainer}>
-        <div className={styles.gridDa}>
-          <div className={styles.divStyles}>
-            <div className={styles.titleD2}>HOW DO WE WORK</div>
-            <div className={styles.descriptionD2}>
-              At Mono Solution, we care for each other we support one another to
-              gain a wide circle of knowledge we prioritize results over working
-              hours Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </div>
-          </div>
-          {/* <h style={{ width: "32px" }}></h> */}
-          <Image
-            src="/Mask Group 11@2x.png"
-            alt="Vercel Logo"
-            // top="3304px"
-            // rigth="60px"
-            width="604px"
-            height="336px"
-          />
-        </div>
-      </div>
-      {/* </div> */}
       <div className={styles.body}>
         <h1 className={styles.title}>PARTNERS</h1>
         <p className={styles.description}>
@@ -407,6 +419,7 @@ export default function Home() {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
             }
           />
+
           <Careers
             name={"Onom Foundation"}
             description={
