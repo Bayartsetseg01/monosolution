@@ -18,7 +18,7 @@ const Company = (props) => {
       {logoPosition === "left" && (
         <div className={styles.pImgStyle}>
           <a className={styles.divS}>
-            <Image src={logo} width={logoWidth} height={logoHeight} />
+            <Image alt= "CompanyLogo"src={logo} width={logoWidth} height={logoHeight} />
           </a>
         </div>
       )}
@@ -40,7 +40,7 @@ const Company = (props) => {
       {logoPosition === "right" && (
         <div className={styles.pImgStyle}>
           <a className={styles.divS}>
-            <Image src={logo} width={logoWidth} height={logoHeight} />
+            <Image alt= "CompanyLogo" src={logo} width={logoWidth} height={logoHeight} />
           </a>
         </div>
       )}
@@ -71,10 +71,12 @@ const Careers = (props) => {
             backgroundColor: "#FFFFFF",
           }}
         >
+          {/* <Link href="/form"> */} 
           <div className={styles.btnStyles}>Apply now</div>
+          {/* </Link> */}
         </Button>
       </div>
-      {/* <div>
+      {<div>
         <Button
           style={{
             display: "flex",
@@ -84,7 +86,7 @@ const Careers = (props) => {
         >
           <div className={styles.btnStyles}>Apply now</div>
         </Button>
-      </div> */}
+      </div> }
     </div>
   );
 };
@@ -92,7 +94,7 @@ const Services = (props) => {
   const { img, imgWidth, imgHeiht, name, description } = props;
   return (
     <div className={styles.card1}>
-      <Image src={img} width={imgWidth} height={imgHeiht} />
+      <Image alt= "ServicesLogo" src={img} width={imgWidth} height={imgHeiht} />
       <div
         style={{
           fontFamily: "Mohave",
@@ -112,7 +114,7 @@ const Development = (props) => {
   const { img, name, imgWidth, imgHeiht } = props;
   return (
     <div className={styles.cardB}>
-      <Image src={img} width={imgWidth} height={imgHeiht} />
+      <Image alt= "DevelopmentLogo" src={img} width={imgWidth} height={imgHeiht} />
 
       <div className={styles.titleC}>{name}</div>
     </div>
@@ -126,7 +128,7 @@ export default function Home() {
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Mohave:wght@700&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </Head>
 
       <main className={styles.main}>
@@ -209,6 +211,7 @@ export default function Home() {
             <div>
               <div className={styles.imgSty}>
                 <Image
+                  alt= "CompanyLogo"
                   src="/Group 78@2x.png"
                   top="2999px"
                   left="60px"
@@ -227,6 +230,7 @@ export default function Home() {
             <div>
               <div className={styles.imgSty}>
                 <Image
+                  alt= "CompanyLogo"
                   src="/Group 77.png"
                   top="1824px"
                   left="60px"
