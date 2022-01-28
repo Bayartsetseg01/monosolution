@@ -1,11 +1,12 @@
 html,
 body {
-  background: #f6f6f6;
+  /* background: #f6f6f6; */
+  margin: 0;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 .content {
   width: auto;
   height: 1168px;
@@ -108,8 +109,8 @@ footer .contact {
 .p1,
 .p3,
 .p4 {
-  margin-bottom: 8px;
-  margin-top: 8px;
+  /* margin-bottom: 8px;
+  margin-top: 8px; */
 }
 
 .col11 {

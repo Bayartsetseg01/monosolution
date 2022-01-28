@@ -71,7 +71,9 @@ const Careers = (props) => {
             backgroundColor: "#FFFFFF",
           }}
         >
-          <div className={styles.btnStyles}>Apply now</div>
+          <div className={styles.btnStyles}>
+            <a href="http://localhost:3000/form">Apply now</a>
+          </div>
         </Button>
       </div>
       {/* <div>
@@ -244,8 +246,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.bodyA}>
-        <div className={styles.title3}>DEVELOPMENT STAGES</div>
+      <div className={styles.body}>
+        <div className={styles.title1}>DEVELOPMENT STAGES</div>
         <div className={styles.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore
@@ -254,7 +256,7 @@ export default function Home() {
           style={{
             width: "1300px",
             display: "flex",
-            height: "768px",
+            // height: "768px",
             justifyContent: "center",
           }}
         >
@@ -286,10 +288,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div style={{ height: "768px" }}>
         <div className={styles.flexContainer}>
           <div
             style={{
+              marginTop: "160px",
               // width: "1300px",
               // height: "672px",
               // display: "flex",
@@ -349,7 +352,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.body}>
-        <h1 className={styles.title}>PARTNERS</h1>
+        <h1 className={styles.titleW}>PARTNERS</h1>
         <p className={styles.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore
@@ -402,42 +405,57 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div
+        style={{
+          height: "728px",
+          display: "flex",
+          // justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <main className={styles.mainCareers}>
+          <div className={styles.title2}>CAREERS</div>
 
-      <main className={styles.main}>
-        <div className={styles.title2}>CAREERS</div>
+          <div className={styles.description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </div>
+        </main>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "120px",
+          }}
+        >
+          <div className={styles.gridF}>
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
 
-        <div className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </div>
-      </main>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className={styles.gridF}>
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
-
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
+          </div>
         </div>
       </div>
       <footer className={styles.footer}>
