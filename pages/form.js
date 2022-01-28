@@ -25,9 +25,9 @@ import styles from '../styles/Home.module.css'
   } 
      return(       
        <div className="containers">
-         <h1 className={styles.title}>Designer</h1>
+         <h1 className="formTitle">Designer</h1>
          <form onSubmit={handleSubmit}>
-           <div className={styles.gri}> 
+           <div className="gri"> 
            <div className= "grid1"> 
              <label htmlFor='fname'> First name </label>
              <input type="text" placeholder="First name" required id='fname'/>{/* </input> */}
@@ -38,20 +38,20 @@ import styles from '../styles/Home.module.css'
            </div>
            <div className="grid3">
              <label htmlFor='phone'> Phone </label>
-             <input type="number" placeholder= "Phone" required id='phone'/> {/* </input> */}
+             <input type="tel" placeholder= "Phone" pattern="[0-9]{8}" required id='phone'/> {/* </input> */}
            </div>
            <div className="grid4">
              <label htmlFor='email'> Email </label>
-             <input type="text" placeholder="Email" required id='email'/>{/* </input> */}
+             <input type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required id='email'/>{/* </input> */}
            </div>
            <div className="grid5">
              <label htmlFor='resume'>Resume</label> 
-             <input type='text' placeholder="Upload file" required id='resume' />  {/* </input> */}
+             <input type='text' placeholder="Upload file" accept= ".pdf, .doc" required id='resume' />  {/* </input> */}
            </div> 
            <div className="textt"> Maximum file size: 500 mb 
                                    File format: pdf, dox, .. </div>         
            </div>
-             <button type="submit">Send</button> 
+          <div className="btn"> <button type="submit">Send</button> </div>
   
          </form>
       </div>

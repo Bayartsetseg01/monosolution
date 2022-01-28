@@ -700,60 +700,9 @@ marg */
   padding: 0px;
 }
 
-/* 
-.title {
-  font-family: 'Mohave', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  color: #000000;
-  letter-spacing:0;
-  opacity: 1;
-  margin: 108px 633px 40px 601px;
-}
- .gri {
-  display: grid;
-  grid-template-columns:280px 280px; 
-  grid-template-rows: 69px 69px 69px;
-  grid-row-gap: 40px; 
-  /* width: 600px; */
-/* margin: auto 360px auto 400px ;  */
-/* }  */
-
-/* .gri label{
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 18px;
-  display: flex;
-  color: #000000;
-  padding-bottom:8px;
-  padding-left:12px;
-  opacity: 1;
-}
-
-.gri input{
-  height: 40px;
-  width: 280px;
-  border: 1px solid #A7A9AB;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  padding-left:12px;
-}
-
-.text {
-  color: #777;
-}
-.btn {
-  display: block;
-  width: 150px;
-  padding: 8px 0;
-  margin: 20px auto;
-  background: #eeede0;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-}  */
-
-/*  @media (max-width: 136px) {
-  .button {
+ /* @media (max-width: 500px) {
+  .body {
     flex-direction: column;
-  }
+    background-color: yellow;
+  } 
 }  */

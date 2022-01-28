@@ -43,25 +43,28 @@ footer {
 button {
   width: 160px;
   height: 40px;
-  margin: 70px 589px 108px 611px;
+  /* margin: 70px 589px 108px 611px;  */
+  margin-top: 70px;
+  margin-bottom: 108px;
   background: #a7a9ab 0% 0% no-repeat padding-box;
   border: 1px solid #ffffff;
   opacity: 1;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;  */
-  text-align: center;
+  
+ /*  text-align: center; */
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
-
-  opacity: 1;
+}
+.btn{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 button:hover {
   background-color: #f6f6f6;
   color: #505050;
-  border: 1px solid #505050;
+  border: 1px solid #F6F6F6;
 }
 footer .contact {
   margin-bottom: 16px;
@@ -86,6 +89,7 @@ footer .contact {
   flex-basis: 547px;
   height: 257px;
   margin: 54px 0 89px 60px;
+ 
 }
 
 .col:nth-of-type(2) {
@@ -206,3 +210,51 @@ span {
 .grid4 {
   margin-left: 50px;
 }
+
+
+/**/
+.formTitle {
+  font-family: 'Mohave', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+  letter-spacing:0;
+  opacity: 1;
+ 
+  text-align: center;
+  margin-top: 108px;
+  margin-bottom: 40px; 
+  /* margin: 108px 633px 40px 601px; */
+}
+ .gri {
+  display: grid;
+  grid-template-columns:280px 280px; 
+  grid-template-rows: 69px 69px 69px;
+  grid-row-gap: 40px; 
+ /*  display: flex; */
+  align-items: center;
+  justify-content: center;
+
+  /* width: 600px; */
+ /*  margin: auto 360px auto 400px ; */ 
+
+ }
+.gri label{
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 18px;
+  display: flex;
+  color: #000000;
+  padding-bottom:8px;
+  padding-left:12px;
+  opacity: 1;
+}
+
+.gri input{
+  height: 40px;
+  width: 280px;
+  border: 1px solid #A7A9AB;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  padding-left:12px;
+}
+
