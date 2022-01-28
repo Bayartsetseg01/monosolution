@@ -18,7 +18,12 @@ const Company = (props) => {
       {logoPosition === "left" && (
         <div className={styles.pImgStyle}>
           <a className={styles.divS}>
-            <Image alt= "CompanyLogo"src={logo} width={logoWidth} height={logoHeight} />
+            <Image
+              alt="CompanyLogo"
+              src={logo}
+              width={logoWidth}
+              height={logoHeight}
+            />
           </a>
         </div>
       )}
@@ -40,7 +45,12 @@ const Company = (props) => {
       {logoPosition === "right" && (
         <div className={styles.pImgStyle}>
           <a className={styles.divS}>
-            <Image alt= "CompanyLogo" src={logo} width={logoWidth} height={logoHeight} />
+            <Image
+              alt="CompanyLogo"
+              src={logo}
+              width={logoWidth}
+              height={logoHeight}
+            />
           </a>
         </div>
       )}
@@ -71,22 +81,24 @@ const Careers = (props) => {
             backgroundColor: "#FFFFFF",
           }}
         >
-          {/* <Link href="/form"> */} 
-          <div className={styles.btnStyles}>Apply now</div>
-          {/* </Link> */}
+          <div className={styles.btnStyles}>
+            <a href="http://localhost:3000/form">Apply now</a>
+          </div>
         </Button>
       </div>
-      {<div>
-        <Button
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            // marginTop: "0",
-          }}
-        >
-          <div className={styles.btnStyles}>Apply now</div>
-        </Button>
-      </div> }
+      {
+        <div>
+          <Button
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              // marginTop: "0",
+            }}
+          >
+            <div className={styles.btnStyles}>Apply now</div>
+          </Button>
+        </div>
+      }
     </div>
   );
 };
@@ -94,7 +106,7 @@ const Services = (props) => {
   const { img, imgWidth, imgHeiht, name, description } = props;
   return (
     <div className={styles.card1}>
-      <Image alt= "ServicesLogo" src={img} width={imgWidth} height={imgHeiht} />
+      <Image alt="ServicesLogo" src={img} width={imgWidth} height={imgHeiht} />
       <div
         style={{
           fontFamily: "Mohave",
@@ -114,7 +126,12 @@ const Development = (props) => {
   const { img, name, imgWidth, imgHeiht } = props;
   return (
     <div className={styles.cardB}>
-      <Image alt= "DevelopmentLogo" src={img} width={imgWidth} height={imgHeiht} />
+      <Image
+        alt="DevelopmentLogo"
+        src={img}
+        width={imgWidth}
+        height={imgHeiht}
+      />
 
       <div className={styles.titleC}>{name}</div>
     </div>
@@ -211,7 +228,7 @@ export default function Home() {
             <div>
               <div className={styles.imgSty}>
                 <Image
-                  alt= "CompanyLogo"
+                  alt="CompanyLogo"
                   src="/Group 78@2x.png"
                   top="2999px"
                   left="60px"
@@ -230,7 +247,7 @@ export default function Home() {
             <div>
               <div className={styles.imgSty}>
                 <Image
-                  alt= "CompanyLogo"
+                  alt="CompanyLogo"
                   src="/Group 77.png"
                   top="1824px"
                   left="60px"
@@ -248,8 +265,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.bodyA}>
-        <div className={styles.title3}>DEVELOPMENT STAGES</div>
+      <div className={styles.body}>
+        <div className={styles.title1}>DEVELOPMENT STAGES</div>
         <div className={styles.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore
@@ -258,7 +275,7 @@ export default function Home() {
           style={{
             width: "1300px",
             display: "flex",
-            height: "768px",
+            // height: "768px",
             justifyContent: "center",
           }}
         >
@@ -290,10 +307,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div style={{ height: "768px" }}>
         <div className={styles.flexContainer}>
           <div
             style={{
+              marginTop: "160px",
               // width: "1300px",
               // height: "672px",
               // display: "flex",
@@ -353,7 +371,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.body}>
-        <h1 className={styles.title}>PARTNERS</h1>
+        <h1 className={styles.titleW}>PARTNERS</h1>
         <p className={styles.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore
@@ -406,42 +424,57 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div
+        style={{
+          height: "728px",
+          display: "flex",
+          // justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <main className={styles.mainCareers}>
+          <div className={styles.title2}>CAREERS</div>
 
-      <main className={styles.main}>
-        <div className={styles.title2}>CAREERS</div>
+          <div className={styles.description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </div>
+        </main>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "120px",
+          }}
+        >
+          <div className={styles.gridF}>
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
 
-        <div className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </div>
-      </main>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className={styles.gridF}>
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
-
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
-          <Careers
-            name={"Onom Foundation"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-            }
-          />
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
+            <Careers
+              name={"Onom Foundation"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+              }
+            />
+          </div>
         </div>
       </div>
       <footer className={styles.footer}>

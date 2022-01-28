@@ -1,3 +1,6 @@
+/* body {
+  margin: 0;
+} */
 .btnStyles {
   color: #505050;
   font-family: Mohave, SemiBold;
@@ -5,11 +8,32 @@
   /* font: var(--unnamed-font-style-normal) normal 600 var(--unnamed-font-size-18) /
     var(--unnamed-line-spacing-24) var(--unnamed-font-family-mohave); */
 }
+.btnStyles > a {
+  text-decoration: none;
+  color: #505050;
+}
 .container {
   padding: 0 2rem;
 }
-
+.mainCareers {
+  height: 136px;
+  width: auto;
+  background-color: #ffffff;
+  /* margin-top: 160px; */
+  /* margin-bottom: 64px; */
+  margin: 0;
+  padding: 0;
+  /* left: 360px; */
+  /* width: 1360px; */
+  /* height: 704px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* letter-spacing: var(--unnamed-character-spacing-0); */
+}
 .main {
+  height: 728px;
   width: auto;
   background-color: #ffffff;
   /* top: 224px; */
@@ -25,6 +49,7 @@
   letter-spacing: var(--unnamed-character-spacing-0);
 }
 .main3 {
+  height: 728px;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -38,13 +63,14 @@
   letter-spacing: var(--unnamed-character-spacing-0);
 }
 .mainTitle1 {
-  width: auto;
+  width: 616px;
   /* height: 184px; */
   margin: 224px 360px 360px 360px;
 }
 .mainTitle {
   width: 640px;
-
+  margin: 0;
+  /* margin-top: 160px; */
   /* height: 184px; */
   /* margin: 224px 360px 360px 360px; */
 }
@@ -56,23 +82,24 @@
   /* width: 1360px; */
 }
 .body {
+  height: 728px;
   background-color: #f6f6f6;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  /* margin: 0; */
   letter-spacing: var(--unnamed-character-spacing-0);
 }
 .bodyA {
   /* padding-top: 80px;
 marg */
   /* top: 848px; */
-  left: 460px;
+  /* left: 460px; */
   background-color: #f6f6f6;
   weight: 1360px;
-  height: 768px;
+  height: 728px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -108,10 +135,11 @@ marg */
   text-decoration: underline;
 }
 .title1 {
-  /* font: normal normal bold 60px/80px Mohave; */
+  font: normal normal bold 60px/80px Mohave;
   font-family: "Mohave";
   font-style: bold;
   margin-bottom: 32px;
+
   /* font-size: 60px; */
   /* top: 224px;
   left: 360px; */
@@ -125,7 +153,7 @@ marg */
   text-align: center;
 }
 .title2 {
-  /* font: normal normal bold 60px/80px Mohave; */
+  font: normal normal bold 60px/80px Mohave;
   font-family: "Mohave";
   font-style: bold;
   font-size: 60px;
@@ -133,12 +161,14 @@ marg */
   color: #000000;
   text-transform: uppercase;
   opacity: 1;
+  display: flex;
   text-align: center;
-  margin-top: 80px;
+  justify-content: center;
+  margin-top: 160px;
   margin-bottom: 32px;
 }
 .title4 {
-  /* font: normal normal bold 60px/80px Mohave; */
+  font: normal normal bold 60px/80px Mohave;
   font-family: "Mohave";
   font-style: bold;
   font-size: 60px;
@@ -147,7 +177,7 @@ marg */
   text-transform: uppercase;
   opacity: 1;
   text-align: center;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   margin-bottom: 32px;
 }
 .title {
@@ -160,6 +190,19 @@ marg */
   text-transform: uppercase;
   opacity: 1;
   text-align: center;
+}
+.titleW {
+  /* font: normal normal bold 60px/80px Mohave; */
+  font-family: "Mohave";
+  font-style: bold;
+  font-size: 60px;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 0;
 }
 .titleT {
   /* font: normal normal bold 60px/80px Mohave; */
@@ -175,9 +218,11 @@ marg */
   margin-top: 32px;
 }
 .title3 {
+  font: normal normal bold 60px/80px Mohave;
   font-family: "Mohave";
   font-style: bold;
-  margin: 40.2px;
+  /* margin: 40.2px; */
+  /* margin-top: 160px;  */
   font-size: 60px;
   letter-spacing: 0px;
   color: #000000;
@@ -314,8 +359,11 @@ marg */
   font-style: ligth;
   font-size: 18px;
   width: 616px;
-  height: 104px;
+  /* height: 104px; */
+  display: flex;
   text-align: center;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 .descriptionT {
   font-family: "Inter";
@@ -351,11 +399,13 @@ marg */
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 .gridF {
+  /* height: 320px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 1300px;
-  margin-bottom: 192px;
+  /* margin-top: 32px; */
+  /* margin-bottom: 192px; */
   /* margin: 0 0 192px 0; */
 }
 .grid {
@@ -372,7 +422,7 @@ marg */
   justify-content: space-evenly;
   width: 100%;
   margin-top: 104px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 .grid1 {
   display: flex;
@@ -573,6 +623,7 @@ marg */
 .flexContainer {
   background-color: #ffffff;
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
   margin: 0px 60px 32px 60px;
 }
