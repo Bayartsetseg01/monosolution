@@ -40,7 +40,7 @@ footer {
   background: 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-button {
+.button2{
   width: 160px;
   height: 40px;
   /* margin: 70px 589px 108px 611px;  */
@@ -56,12 +56,12 @@ button {
   font-size: 18px;
   color: #ffffff;
 }
-.btn{
+ .btn{
   display: flex;
   justify-content: center; 
   align-items: center; 
-}
-button:hover {
+} 
+.button2:hover {
   background-color: #f6f6f6;
   color: #505050;
   border: 1px solid #F6F6F6;
@@ -180,16 +180,22 @@ span {
   line-height: 24px;
   opacity: 1;
 }
-.grid5 input {
+.btn1 {
   text-decoration: underline;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #a7a9ab;
   opacity: 1;
+  width:280px;
+  height:40px;
+  border: 1px solid #A7A9AB;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  padding-left:12px;
+  text-align:left;
 }
 
-#resume:hover {
+.btn1:hover {
   color: #000000;
 }
 .textt {
@@ -258,3 +264,18 @@ span {
   padding-left:12px;
 }
 
+
+/**/
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}

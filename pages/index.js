@@ -71,9 +71,9 @@ const Careers = (props) => {
             backgroundColor: "#FFFFFF",
           }}
         >
-          <Link href="/form"> </Link>
+          {/* <Link href="/form"> */} 
           <div className={styles.btnStyles}>Apply now</div>
-          
+          {/* </Link> */}
         </Button>
       </div>
       {<div>
