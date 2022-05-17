@@ -1,3 +1,9 @@
+// const errors = {};
+//     const regax = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
+// const validate = (values) =>{
+//   const errors = {}
+//   const regax = 
+// };
 import React from "react";
 import { UncontrolledCarousel, Row, Col, Button } from "reactstrap";
 import { withRouter } from "next/router";
@@ -82,23 +88,10 @@ const Careers = (props) => {
           }}
         >
           <div className={styles.btnStyles}>
-            <a href="http://localhost:3000/form">Apply now</a>
+            <a href="http://localhost:2000/form">Apply now</a>
           </div>
         </Button>
       </div>
-      {
-        <div>
-          <Button
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              // marginTop: "0",
-            }}
-          >
-            <div className={styles.btnStyles}>Apply now</div>
-          </Button>
-        </div>
-      }
     </div>
   );
 };
@@ -477,7 +470,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className={styles.footer}>
+    {/*   <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -488,7 +481,8 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+
+      </footer> */}
     </div>
   );
 }

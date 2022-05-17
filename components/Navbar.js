@@ -3,12 +3,12 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <Image
+      <a href="/"> <Image
           alt="Monosolution is logo"
           src="/Component1.png"
           width={240}
           height={28}
-        />
+        /></a>
       </div>
     </nav>
   );
