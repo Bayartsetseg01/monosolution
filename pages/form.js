@@ -47,16 +47,18 @@ import styles from '../styles/Home.module.css'
            <div className="grid5">
              <label htmlFor='resume'>Resume</label> 
             {/*  <input type='text' placeholder="Upload file" accept= ".pdf, .doc" required id='resume' />  {/* </input> */}
-             <div class="upload-btn-wrapper">
-               <button class="btn1"> Upload file</button>
+             <div className="upload-btn-wrapper">
+               <button className="btn1"> Upload file</button>
                <input type="file" accept= ".pdf, .doc" required id='resume' />
              </div>
            
            </div> 
            <div className="textt"> Maximum file size: 500 mb 
-                                   File format: pdf, dox, .. </div>         
+                                   File format: pdf, dox, .. </div> 
+                                   
+                                           
            </div>
-          <div className="btn"> <button class="button2" type="submit">Send</button> </div>
+          <div className="send"> <button className="button2" type="submit">Send</button> </div>
   
          </form>
       </div>
